@@ -40,7 +40,8 @@ class FieldsBasic {
             $resize = \CFile::ResizeImageGet($this->_data['PREVIEW_PICTURE'],$arr);
             return $resize['src'];
         } else
-            return \CFile::GetFileArray($this->_data['PREVIEW_PICTURE']);;
+            $img = \CFile::GetFileArray($this->_data['PREVIEW_PICTURE']);
+            return $img['SRC'];
     }
     public function getName(){
         $return = $this->_data['~NAME'];

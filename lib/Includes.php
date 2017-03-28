@@ -1,9 +1,13 @@
 <?php
 
 namespace bxincludes;
-require __DIR__."/Fields.php";
 
-class BXIncludes{
+if(BX_INCLUDES_CLASS_PATH)
+    require BX_INCLUDES_CLASS_PATH;
+else
+    require __DIR__.'/BXIncludeFieldsExample.php';
+
+class Includes{
     private $_data = null;
     private $_link = false;
 

@@ -1,7 +1,6 @@
 <?php
 
 namespace bxincludes;
-require __DIR__."/FieldsBasic.php";
 
 class Fields extends FieldsBasic{
     public function getTitle(){
